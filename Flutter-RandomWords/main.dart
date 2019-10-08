@@ -13,11 +13,20 @@ class App extends StatelessWidget {
           title: Text('Flutter AppBar'),
         ),
         body: Center(
-         child: Text('Hello World'),
+         child: RandomWords(),
         ),
       ),
     );
   }
 }
 
-
+class RandomWords extends StatefulWidget{
+  RandomWordsState createState() => RandomWordsState();
+}
+class RandomWordsState extends State<RandomWords>{
+  @override
+  Widget build(BuildContext context){
+    final wordPair = WordPair.random();
+    return Text(wordPair.asPascalCase);
+  }
+}
