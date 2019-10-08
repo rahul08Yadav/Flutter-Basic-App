@@ -10,16 +10,16 @@ class App extends StatelessWidget {
           title: Text('Flutter AppBar'),
         ),
         body: Center(
-        //  child: Text('Hello World'),
+         child: Text('Hello World'),
           //child: Text(wordPair.asPascalCase),
-          child: RandomWords(),
+         // child: RandomWords(),
         ),
       ),
     );
   }
 }
 
-class RandomWords extends StatefulWidget{
+/*class RandomWords extends StatefulWidget{
   RandomWordsState createState() => RandomWordsState();
 }
 class RandomWordsState extends State<RandomWords>{
@@ -28,4 +28,4 @@ class RandomWordsState extends State<RandomWords>{
     final wordPair = WordPair.random();
     return Text(wordPair.asPascalCase);
   }
-}
+}*/
